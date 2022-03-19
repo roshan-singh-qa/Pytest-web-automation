@@ -21,12 +21,12 @@ pipeline {
        }
         stage('Generate Report'){
            steps{
-
+               echo "Generating Report"
            }
        }
        stage('Teams Notification'){
            steps{
-
+               echo "Notification on slack/Teams"
            }
        }
     }
