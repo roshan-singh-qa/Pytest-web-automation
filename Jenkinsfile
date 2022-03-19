@@ -19,6 +19,16 @@ pipeline {
                }
            }
        }
+        stage('Generate Report'){
+           steps{
+
+           }
+       }
+       stage('Teams Notification'){
+           steps{
+
+           }
+       }
     }
 }
 
