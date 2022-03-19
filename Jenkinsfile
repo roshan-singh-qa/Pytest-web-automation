@@ -15,7 +15,7 @@ pipeline {
         stage('WithEnv-Script') {
            steps {
                withEnv(["VALUE=${VALUE}", 'FILENAME=foofile']) {
-                   echo $VALUE
+                   echo '$VALUE'
                }
            }
        }
