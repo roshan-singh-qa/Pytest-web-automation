@@ -12,6 +12,13 @@ pipeline {
                 bat 'pytest -v -s'
             }
         }
+        stage('WithEnv Script') {
+           steps {
+               withEnv(["VALUE=${VALUE}", 'FILENAME=foofile']) {
+                   sh 'cd script;./build.sh'
+               }
+           }
+       }
     }
 }
 
